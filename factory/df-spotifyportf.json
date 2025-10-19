@@ -1,0 +1,9 @@
+{
+	"name": "df-spotifyportf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7e424a85-827b-48ef-9ce5-bc1208147c13",
+		"tenantId": "57881a93-d5ef-40cb-8520-4e4e90d46c1a"
+	}
+}
