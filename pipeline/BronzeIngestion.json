@@ -13,7 +13,7 @@
 						]
 					},
 					{
-						"activity": "Set variable1",
+						"activity": "current",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -109,14 +109,21 @@
 				}
 			},
 			{
-				"name": "Set variable1",
+				"name": "current",
 				"type": "SetVariable",
 				"dependsOn": [],
 				"policy": {
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": []
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "current",
+					"value": {
+						"value": "@utcNow()",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"parameters": {
@@ -128,6 +135,11 @@
 			},
 			"cdc_col": {
 				"type": "string"
+			}
+		},
+		"variables": {
+			"current": {
+				"type": "String"
 			}
 		},
 		"annotations": []
